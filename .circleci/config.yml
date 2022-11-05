@@ -21,7 +21,9 @@ jobs:
       - run:
           name: Testing Api
           command: 'echo testing using conatainers' 
-      
+      - run:
+          name: Check Status of Testing Containers are Deployed 
+          command: docker ps
       - run:
           name: Run cucumber tests against Register BB Mock 
           command: docker  exec -i pytest  pytest 
