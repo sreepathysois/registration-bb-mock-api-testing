@@ -9,4 +9,5 @@ services:
     build:
       context: ../test/. 
     container_name: pytest
-    
+    tty: true
+
