@@ -20,8 +20,10 @@ jobs:
           command: docker ps
       - run:
           name: Testing Api
-          command: 'echo testing using conatainers'
-
+          command: 'echo testing using conatainers' 
+      - run:
+          name: Testing Pytest Container Health
+          command: docker ps
       - run:
           name: Run cucumber tests against Register BB Mock 
           command: docker  exec -i pytest  pytest 
