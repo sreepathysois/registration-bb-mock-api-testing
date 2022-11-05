@@ -9,4 +9,5 @@ services:
     build:
       context: ../test/. 
     container_name: pytest
+    stdin_open: true
     tty: true
